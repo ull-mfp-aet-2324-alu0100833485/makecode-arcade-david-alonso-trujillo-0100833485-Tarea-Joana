@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id=":=j-X!H{eKMpv{5G0e(J">Player</variable><variable type="KIND_SpriteKind" id="Shabs@U||M,I1grw@gyN">Projectile</variable><variable type="KIND_SpriteKind" id="kk?zk4-%3TAt|a||;V+j">Food</variable><variable type="KIND_SpriteKind" id="qgHYMH(EFTE0hEGb`uMo">Enemy</variable><variable id="}PH2LB%iPd/?$OSh%?~p">Tiburon</variable><variable id="Qm9EdjeO_xRO^5mc^sD=">Pescado</variable><variable id=",xg_4lY?t]Q6HpCJW!@4">mySprite</variable></variables><block type="pxt-on-start" id="[HCyz8.AMO,fYYeLy{Cp" x="30" y="70"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="/GA}COq7CfeY?H57WP~K"><value name="color"><shadow type="colorindexpicker" id="0x`rg$F*;Y-G~b9O/c}z"><field name="index">8</field></shadow></value><next><block type="variables_set" id="9-(wAF)si2PaStR+n1V_"><field name="VAR" id="}PH2LB%iPd/?$OSh%?~p">Tiburon</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreatenoset" id="aOOTA|;t.@M=ZY@ZaC*l"><value name="img"><shadow type="screen_image_picker" id=")r$n)iI8ik-*^[_fQJ1Q"><field name="img">img`
+...........fffffff...ccfff..........
+..........fbbbbbbbffcbbbbf..........
+..........fbb111bbbbbffbf...........
+..........fb11111ffbbbbff...........
+..........f1cccc1ffbbbbbcff.........
+..........ffc1c1c1bbcbcbcccf........
+...........fcc3331bbbcbcbcccf..ccccc
+............c333c1bbbcbcbccccfcddbbc
+............c333c1bbbbbbbcccccddbcc.
+............c333c11bbbbbccccccbbcc..
+...........cc331c11bbbbccccccfbccf..
+...........cc13c11cbbbcccccbbcfccf..
+...........c111111cbbbfdddddc.fbbcf.
+............cc1111fbdbbfdddc...fbbf.
+..............cccfffbdbbfcc.....fbbf
+....................fffff........fff
+`</field><data>{"commentRefs":[],"fieldData":{"img":")r$n)iI8ik-*^[_fQJ1Q"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="R0diO5N+-c*d:C:hu_dx"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="Ng~D.u?[q2Zow`lM]H$O"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="1/[;:pb=?M*d7L55!ULe"><field name="VAR" id="}PH2LB%iPd/?$OSh%?~p">Tiburon</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="Pz*7V`.uzRfSD!QeFZa6"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="NFKTHn:8ip8}-=4EJgA;"><field name="speed">100</field></shadow></value><next><block type="variables_set" id="es_dtQ8y]ORK980cYNLN"><field name="VAR" id="Qm9EdjeO_xRO^5mc^sD=">Pescado</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreatenoset" id="HW%]LRJS]E*H/z97QmP,"><value name="img"><shadow type="screen_image_picker" id="i_dIx=6Tdsw.4db0](!t"><field name="img">img`
+. . . . . . . . . b 5 b . . . . 
+. . . . . . . . . b 5 b . . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. . . . b b 5 b c 5 5 d 4 c . . 
+. b b b b 5 5 5 b f d d 4 4 4 b 
+. b d 5 b 5 5 b c b 4 4 4 4 b . 
+. . b 5 5 b 5 5 5 4 4 4 4 b . . 
+. . b d 5 5 b 5 5 5 5 5 5 b . . 
+. b d b 5 5 5 d 5 5 5 5 5 5 b . 
+b d d c d 5 5 b 5 5 5 5 5 5 b . 
+c d d d c c b 5 5 5 5 5 5 5 b . 
+c b d d d d d 5 5 5 5 5 5 5 b . 
+. c d d d d d d 5 5 5 5 5 d b . 
+. . c b d d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"i_dIx=6Tdsw.4db0](!t"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="`74aR2=D,-@B;1?65L,]"><field name="MEMBER">Food</field></shadow></value></block></value></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" id="Ofq5/8vR]~MSqTJg8nWQ" x="30" y="410"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="fh4o]@$Jc=]GAuhys16X"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="q^E$k3VWBTnoi~Wmm)Fp"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="Lp9f@AEPTw7Ypl`KN1`o"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="w0!$!yjBGv+k4Sb,IAv;"><field name="MEMBER">Food</field></shadow></value><statement name="HANDLER"><block type="hudChangeScoreBy" id="WG8W-G[Sr.64m8cH+1uV"><value name="value"><shadow type="math_number" id="2!vri@kbhiZ=tOI$(II6"><field name="NUM">1</field></shadow></value><next><block type="spritesetpos" id="g3muBLLh9ikQAkB)Wi3w"><value name="sprite"><block type="variables_get" id="6T].Vm^=E1kH8TPj^)PP"><field name="VAR" id="Qm9EdjeO_xRO^5mc^sD=">Pescado</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="Z8Vz^;G);V{;.=0+~z/_"><value name="min"><shadow type="math_number" id="vk$A2{@Y866$h`a;C-;#"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="H@z44F1-_5}4|=UL5zZw"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="!Efh2aN@8-igHI[VbyGd"><value name="min"><shadow type="math_number" id="o54Ln^kyJ9w{^%!AMKM]"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="0[4gx}A7QrupFKJ(k[}D"><field name="NUM">120</field></shadow></value></block></value><next><block type="gamecountdown" id="`mp0aM]Vvir}Xp)HE`bO"><value name="duration"><shadow type="math_number" id="W%.gkR*_w~JgxmHHrAJc"><field name="NUM">20</field></shadow></value><next><block type="music_playable_play" id="Ph`ka)DG(A2iuL5qQt]U"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_melody_playable" id="{JDE{QB`c~)5vdA}9Rh7"><field name="melody">music.baDing</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="music_ring" id="H];kge-EA+qVll~_pHl9" disabled="true" x="70" y="730"><value name="note"><shadow type="device_note" id="3SC4NcN9%bT,tC%PL}?$" disabled="true"><field name="note">262</field></shadow></value></block></xml>
